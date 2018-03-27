@@ -1,5 +1,6 @@
 package com.desitsa.admin;
 
+import com.desitsa.admin.controllers.MenuController;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
@@ -9,21 +10,17 @@ import javafx.stage.Stage;
 
 public class Main extends Application {
 
-    private Stage stage;
+    private ViewController viewController;
 
     @Override
     public void start(Stage primaryStage) throws Exception {
-        stage = primaryStage;
 
+        viewController = ViewController.getInstance(primaryStage);
+        viewController.setTitle("Desit SA");
 
-        Parent root = FXMLLoader.load(getClass().getResource("/views/Menu.fxml"));
-        System.out.println(getClass().getName());
-        primaryStage.setTitle("Hello World");
-        primaryStage.setScene(new Scene(root, 300, 275));
-        primaryStage.show();
+        viewController.setView("Menu", true);
+
     }
-
-
 
     public static void main(String[] args) {
         launch(args);
