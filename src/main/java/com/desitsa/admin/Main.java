@@ -1,24 +1,25 @@
 package com.desitsa.admin;
 
-import com.desitsa.admin.controllers.MenuController;
+import com.desitsa.admin.controllers.LoginController;
 import javafx.application.Application;
-import javafx.fxml.FXMLLoader;
-import javafx.scene.Parent;
-import javafx.scene.Scene;
 import javafx.stage.Stage;
 
 
 public class Main extends Application {
 
-    private ViewController viewController;
+    private ViewManager viewManager;
 
     @Override
     public void start(Stage primaryStage) throws Exception {
 
-        viewController = ViewController.getInstance(primaryStage);
-        viewController.setTitle("Desit SA");
+        // Configuraciones generales de la ventana
+        primaryStage.setResizable(false);
 
-        viewController.setView("Menu", true);
+        viewManager = ViewManager.getInstance(primaryStage);
+        viewManager.setTitle("Desit SA");
+
+        viewManager.setView(LoginController.class, true);
+
 
     }
 
