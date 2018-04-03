@@ -27,7 +27,7 @@ public class Main extends Application {
         stage.setTitle("Desit SA");
 
         // Primera ventana (login)
-        setScene(getView(MainController.class, "main"));
+        setScene(getView(LoginController.class, "main"));
     }
 
     public static void main(String[] args) {
@@ -36,9 +36,12 @@ public class Main extends Application {
 
     /**
      * Cambia la escena
+     *
+     *
      * @param n
      */
     public void setScene(Parent n) {
+        stage.close(); // TODO: es necesario? que diferencia hay? verlo..
         stage.setScene(new Scene(n));
         stage.show();
         stage.centerOnScreen();
@@ -48,6 +51,9 @@ public class Main extends Application {
         return getView(c, null);
     }
 
+    /**
+     * Obtiene una nueva vista o una ya creada
+     */
     public Parent getView(Class c, String id) {
         Parent p = null;
         try {

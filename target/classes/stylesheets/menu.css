@@ -1,0 +1,37 @@
+* {
+    color-fondo: #1F2E44;
+    color-fondo-resaltado: #2E708C;
+    color-texto: #FFFFFF;
+}
+
+/* MENU BAR */
+.menu-bar {
+    -fx-background-color: color-fondo;
+    -fx-font-size: 14px;
+}
+
+.menu-bar > .container > .menu-button > .label {
+    -fx-text-fill: color-texto;
+}
+
+.menu-bar > .container > .menu-button:hover,
+.menu-bar > .container > .menu-button:focused,
+.menu-bar > .container > .menu-button:showing {
+    -fx-background-color: color-fondo-resaltado;
+}
+
+.menu-item {
+    -fx-background-color: color-fondo;
+}
+
+.menu-item .label {
+    -fx-text-fill: color-texto;
+}
+
+.menu-item:focused, .menu-item:hovered {
+    -fx-background-color: color-fondo-resaltado;
+}
+
+.context-menu {
+    -fx-background-color: color-fondo;
+}

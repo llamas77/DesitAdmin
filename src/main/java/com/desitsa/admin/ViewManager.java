@@ -28,7 +28,7 @@ public class ViewManager {
     }
 
     /**
-     * Obtiene una lista
+     * Obtiene una vista
      *
      * Si se indica ID, puede existir y devolverse directamente... o puede no existir, crearse, guardarse y devolverse.
      * Si no se indica ID, se crea siempre sin guardar nada
