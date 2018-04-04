@@ -7,7 +7,7 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="320.0" prefWidth="454.0" styleClass="base-solida" stylesheets="@/stylesheets/mainstyle.css" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.desitsa.admin.controllers.LoginController">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="320.0" prefWidth="454.0" styleClass="base-solida" stylesheets="@../stylesheets/mainstyle.css" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.desitsa.admin.controllers.LoginController">
    <children>
       <VBox alignment="CENTER" layoutX="84.0" layoutY="25.0" prefHeight="271.0" prefWidth="287.0" spacing="20.0">
          <children>
@@ -18,7 +18,7 @@
             </Label>
             <JFXTextField fx:id="tfNombre" promptText="Legajo" />
             <JFXTextField fx:id="tfContraseña" promptText="Contraseña" />
-            <JFXButton prefHeight="37.0" prefWidth="72.0" text="Entrar" />
+            <JFXButton text="Entrar" />
          </children>
       </VBox>
    </children>

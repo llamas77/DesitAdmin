@@ -1,8 +1,10 @@
 * {
-    sombra-suave: dropshadow(gaussian, rgba(0, 0, 0, 0.4), 10, 0.5, 0.0, 0.0);
     color-transparente: rgba(0, 0, 0, 0);
-    color-blanco-suave: #eaeaea;
-
+    color-blanco-suave: #EAEAEA;
+    color-logo-oscuro: #1F2E44;
+    color-logo-oscuro-resaltado: #23354F;
+    color-logo-claro: #2E708C;
+    sombra-suave: dropshadow(gaussian, rgba(0, 0, 0, 0.4), 10, 0.5, 0.0, 0.0);
 }
 
 .base-trasparente {
@@ -21,7 +23,9 @@
 .jfx-text-field, .jfx-password-field  {
     -fx-text-inner-color:  color-blanco-suave;
     -fx-prompt-text-fill:  color-blanco-suave;
+    -jfx-focus-color:  WHITE;
     -jfx-unfocus-color:  #2e708c;
+    -fx-font-size: 20px;
 }
 
 .jfx-text-field:hover, .jfx-password-field:hover {
@@ -31,7 +35,8 @@
 .jfx-button {
     -jfx-button-type: RAISED;
     -fx-background-color: #2e708c;
-    -fx-text-fill: white;
+    -fx-text-fill: WHITE;
+    -fx-font-size: 22px;
 }
 
 .jfx-button:hover {

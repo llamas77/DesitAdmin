@@ -2,7 +2,6 @@ package com.desitsa.admin;
 
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
-import javafx.stage.Stage;
 
 import java.io.IOException;
 import java.util.HashMap;
@@ -18,7 +17,7 @@ public class ViewManager {
     /**
      * Obtiene la instancia del controlador de vistas.
      */
-    public static ViewManager getInstance(Stage stage) {
+    public static ViewManager getInstance() {
         if (instance == null) instance = new ViewManager();
         return instance;
     }
