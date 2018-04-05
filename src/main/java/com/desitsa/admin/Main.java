@@ -33,7 +33,8 @@ public class Main extends Application {
         // Primera ventana (login)
         setScene(getView(LoginController.class, "main"));
 
-        System.out.println(Usuario.getUsuario(1).getNombre());
+        Usuario u = new Usuario(null, "pedro", "gomez", "39691748", "asdasd");
+        u.create();
     }
 
     public static void main(String[] args) {

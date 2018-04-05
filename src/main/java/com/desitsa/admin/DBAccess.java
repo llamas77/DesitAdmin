@@ -6,7 +6,7 @@ public class DBAccess {
 
     public static DBAccess instance;
 
-    private String url = "jdbc:mysql://localhost/db_desitadmin?autoReconnect=true&useSSL=false";
+    private String url = "jdbc:mysql://localhost/desitadmin?autoReconnect=true&useSSL=false";
     private String user = "root";
     private String pass = "253614";
 
@@ -51,17 +51,5 @@ public class DBAccess {
 
     public void rollback() throws SQLException {
         connection.rollback();
-    }
-
-    /**
-     * Cierra la conexión si está abierta.
-     */
-    public void close() {
-        if (connection != null)
-            try {
-                if (!connection.isClosed()) connection.close();
-            } catch (SQLException e) {
-                e.printStackTrace();
-            }
     }
 }
